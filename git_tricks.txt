@@ -1,0 +1,74 @@
+#Git Tips and Tricks
+
+#Personal Github repository
+https://github.com/marcelofaleiro/pythonProjects.git
+
+#Start Git
+git init
+
+#Status of current directory files
+git status
+
+#Add new file into control version
+git add <file> 
+
+#Commit changes from staged area
+git commit -m "Commentary"
+
+#History of all commits 
+git log
+
+#Link the remote repository with a GitHub repository
+git remote add origin https://github.com/marcelofaleiro/pythonProjects.git
+
+#Push command tells Git where to put our commits when we're ready
+# -u tells Git to remember the parameters so that next time simply run git push.
+git push -u origin master
+
+#Check for changes on our GitHub repository
+git pull origin master
+
+#Diff our most recent commit, HEAD pointer
+git diff HEAD
+
+#See changes you just staged
+git diff --staged
+
+#Unstage file 
+git reset <file>
+
+#Changed back to how they were at the last commit 
+git checkout --<file>
+
+#Create a branch bug_fix
+git branch bug_fix
+
+#List of the branches
+git branch
+
+#Switch branches master --> bug_fix
+git checkout bug_fix
+
+#Remove files from the branch
+git rm '*.txt'
+
+#Merge the changes from the branches
+#current branch: master
+git merge bug_fix
+
+#Delete a branch
+git branch -d bug_fix
+
+#Push the modifications on your remote repository
+git push
+
+
+
+
+
+
+
+
+
+
+
